@@ -71,6 +71,7 @@ ROOT_URLCONF = 'cmbackend.urls'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://newsletterbackendapi.herokuapp.com",
 ]
 
 TEMPLATES = [
@@ -101,7 +102,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 
 # Password validation
